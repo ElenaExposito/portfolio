@@ -1,18 +1,18 @@
+---
+import { Image } from "astro:assets";
+import brillo from "../assets/brillo.gif";
+---
+
 <section class="presentation">
   <div class="presentation-container">
+    <Image src={brillo} alt="Estrellas" class={"presentation-image-one"} />
     <div class="presentation-main-text">
       <h1>Elena Expósito</h1>
       <h2>Desarrolladora Web</h2>
     </div>
-    <img
-      src="https://media-public.canva.com/xEXQc/MAFkekxEXQc/1/t.png"
-      alt="Imagen desde Canva"
-      0
-      width="50"
-      height="50"
-    />
-    <h3>Portfolio</h3>
+    <Image src={brillo} alt="Estrellas" class={"presentation-image-two"} />
   </div>
+  <h3>Portfolio</h3>
 </section>
 
 <style>
@@ -41,26 +41,44 @@
 
   .presentation {
     position: relative;
-    z-index: 1; /* Asegura que este contenido esté sobre el canvas */
+    z-index: 1;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: transparent;
+    padding: 1.5rem;
+  }
+
+  .presentation-container {
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .presentation-image-one {
+    display: flex;
+    align-self: flex-end;
   }
   :root {
-    --h1-size: 5rem;
-    --h2-size: 6rem;
+    --h1-size: 6rem;
+    --h2-size: 5rem;
     --h3-size: 2rem;
   }
 
+  h1,
+  h2 {
+    font-family: "Gliker", sans-serif;
+    color: #0e0c14;
+  }
+
   h1 {
-    font-family: "Sloop Script", cursive;
     font-size: var(--h1-size);
   }
 
   h2 {
-    font-family: "Perandory Serif", serif;
     font-size: var(--h2-size);
   }
 
@@ -81,17 +99,27 @@
 
   @media (max-width: 1200px) {
     :root {
-      --h1-size: 3rem;
-      --h2-size: 4rem;
+      --h1-size: 4rem;
+      --h2-size: 3rem;
       --h3-size: 1.5rem;
     }
   }
 
   @media (max-width: 768px) {
     :root {
-      --h1-size: 2.5rem;
-      --h2-size: 2.5rem;
+      --h1-size: 3rem;
+      --h2-size: 2rem;
       --h3-size: 1.2rem;
+    }
+
+    .presentation-container {
+      gap: 0.5rem;
+    }
+
+    .presentation-image-one,
+    .presentation-image-two {
+      width: 30px;
+      height: 30px;
     }
   }
 </style>
