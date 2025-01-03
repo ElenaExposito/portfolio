@@ -3,12 +3,16 @@ import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/reset.css";
 import { Lumiflex } from "../components/Lumiflex/index.tsx";
+import Header from "../components/Header.astro";
+import Proyects from "../components/Proyects/Proyects.astro";
 ---
 
 <Layout>
   <div class="section-welcome">
+    <Header />
     <Lumiflex client:load />
     <Welcome />
+    <Proyects />
   </div>
 </Layout>
 
@@ -18,5 +22,9 @@ import { Lumiflex } from "../components/Lumiflex/index.tsx";
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 </style>

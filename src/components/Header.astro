@@ -1,0 +1,37 @@
+---
+import "../styles/reset.css";
+---
+
+<ul class="navigation">
+  <li><a href="#proyects" class="proyects-nav">Proyectos</a></li>
+  <li><a href="#about-me" class="about-me-nav">Sobre mí</a></li>
+  <li><a href="#contact" class="contact-nav">Contacto</a></li>
+</ul>
+
+<style>
+  @font-face {
+    font-family: "Afacad Italic";
+    src: url("@src/fonts/Afacad-Italic[wght].ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .navigation {
+    font-family: "Afacad Italic", sans-serif;
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    top: 0;
+    width: fit-content;
+    font-size: 1.2rem;
+    position: sticky;
+    background: red;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(20px) saturate(1.7);
+    z-index: 2;
+    margin-top: 1rem;
+  }
+</style>

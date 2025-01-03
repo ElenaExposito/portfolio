@@ -89,3 +89,12 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+a {
+  all: unset;
+  display: inline;
+}
+
+li {
+  list-style: none;
+}
