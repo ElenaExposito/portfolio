@@ -8,23 +8,23 @@ import Proyects from "../components/Proyects/Proyects.astro";
 ---
 
 <Layout>
+  <Header />
+  <Lumiflex client:load />
   <div class="section-welcome">
-    <Header />
-    <Lumiflex client:load />
     <Welcome />
-    <Proyects />
   </div>
+  <Proyects />
 </Layout>
 
 <style>
   .section-welcome {
     position: relative;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Cambiado de "center" a "flex-start" */
+    z-index: 1;
   }
 </style>
