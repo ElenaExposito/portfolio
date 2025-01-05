@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import brillo from "../assets/brillo.gif";
+import "../styles/index.css";
 ---
 
 <section class="presentation">
@@ -15,13 +16,6 @@ import brillo from "../assets/brillo.gif";
 </section>
 
 <style>
-  @font-face {
-    font-family: "Gliker";
-    src: url("@src/fonts/Gliker-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
-
   body {
     background-repeat: no-repeat;
     display: flex;
@@ -51,15 +45,11 @@ import brillo from "../assets/brillo.gif";
     display: flex;
     align-self: flex-end;
   }
-  :root {
-    --h1-size: 6rem;
-    --h2-size: 5rem;
-  }
 
   h1,
   h2 {
     font-family: "Gliker", sans-serif;
-    color: #0e0c14;
+    color: var(--gray-custom);
   }
 
   h1 {

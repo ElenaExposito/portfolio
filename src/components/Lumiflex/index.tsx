@@ -70,7 +70,7 @@ export function Lumiflex() {
       style={{
         width: "100vw",
         height: "100vh",
-        position: "fixed", // Fijo para que sea un fondo constante.
+        position: "fixed",
         top: 0,
         left: 0,
         zIndex: -1,

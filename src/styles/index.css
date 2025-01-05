@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Afacad Italic";
+  src: url("@src/fonts/Afacad-Italic[wght].ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gliker";
+  src: url("@src/fonts/Gliker-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --accent-custom: #8e74c1;
+  --gray-custom: #0e0c14;
+  --background-custom: #e2d5ff;
+
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  --white-scroll-hover: hsla(45, 17%, 95%, 0.8);
+
+  --h1-size: 6rem;
+  --h2-size: 5rem;
+}
