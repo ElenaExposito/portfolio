@@ -13,6 +13,10 @@ import "../styles/index.css";
     </div>
     <Image src={brillo} alt="Estrellas" class={"presentation-image-two"} />
   </div>
+  <p>
+    Disfruto creando experiencias digitales que sean visualmente atractivas,
+    accesibles y centradas en los usuarios
+  </p>
 </section>
 
 <style>
@@ -27,11 +31,13 @@ import "../styles/index.css";
   .presentation {
     position: relative;
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
+    gap: 1rem;
   }
 
   .presentation-container {
@@ -49,7 +55,7 @@ import "../styles/index.css";
   h1,
   h2 {
     font-family: "Gliker", sans-serif;
-    color: var(--gray-custom);
+    color: var(--gray-custom-dark);
   }
 
   h1 {
@@ -60,27 +66,20 @@ import "../styles/index.css";
     font-size: var(--h2-size);
   }
 
-  @media (max-width: 1200px) {
-    :root {
-      --h1-size: 4rem;
-      --h2-size: 3rem;
-    }
+  .presentation-container {
+    gap: 0.5rem;
   }
 
-  @media (max-width: 768px) {
-    :root {
-      --h1-size: 3rem;
-      --h2-size: 2rem;
-    }
+  .presentation-image-one,
+  .presentation-image-two {
+    width: 30px;
+    height: 30px;
+  }
 
-    .presentation-container {
-      gap: 0.5rem;
-    }
-
-    .presentation-image-one,
-    .presentation-image-two {
-      width: 30px;
-      height: 30px;
-    }
+  p {
+    font-family: "Afacad", sans-serif;
+    font-size: var(--p-size);
+    text-align: center;
+    color: var(--gray-custom);
   }
 </style>
