@@ -1,0 +1,29 @@
+---
+import info from "../../data/proyects.json";
+import "./Cards.css";
+---
+
+{
+  info.map((project) => (
+    <div class="card-wrapper" id={project.id}>
+      <div class="card-info">
+        <div class="card-img-wrapper">
+          <img
+            class="card-img"
+            src={project.image}
+            alt={`Imagen del proyecto ${project.title}`}
+          />
+        </div>
+        <div class="card-text">
+          <h4 class="card-title">{project.title}</h4>
+          <p class="card-description">{project.description}</p>
+        </div>
+        <div class="card-division-info">
+          {project.technologies.map((tech) => (
+            <span class="project-languages">{tech}</span>
+          ))}
+        </div>
+      </div>
+    </div>
+  ))
+}

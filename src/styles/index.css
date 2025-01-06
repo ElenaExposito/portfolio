@@ -1,4 +1,11 @@
 @font-face {
+  font-family: "Afacad";
+  src: url("@src/fonts/Afacad[wght].ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Afacad Italic";
   src: url("@src/fonts/Afacad-Italic[wght].ttf") format("truetype");
   font-weight: normal;
@@ -14,12 +21,39 @@
 
 :root {
   --accent-custom: #8e74c1;
-  --gray-custom: #0e0c14;
+  --gray-custom-dark: #0e0c14;
+  --gray-custom: #201e27;
   --background-custom: #e2d5ff;
+
+  --card-background: #f1f1f2;
+  --card-border: #998db5;
+  --card-title: #2f2148;
+  --card-description: #393644;
+  --card-languages: #d8d7d9;
+  --card-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
   --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   --white-scroll-hover: hsla(45, 17%, 95%, 0.8);
 
   --h1-size: 6rem;
   --h2-size: 5rem;
+  --h3-size: 2rem;
+  --p-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --h1-size: 4rem;
+    --h2-size: 3rem;
+    --p-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --h1-size: 3rem;
+    --h2-size: 2rem;
+    --h3-size: 1.5rem;
+    --p-size: 1.1rem;
+  }
 }
