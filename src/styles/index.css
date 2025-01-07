@@ -30,10 +30,10 @@
   --card-title: #2f2148;
   --card-description: #393644;
   --card-languages: #d8d7d9;
-  --card-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  --card-shadow: 0 8px 15px rgba(128, 0, 128, 0.5);
 
-  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  --white-scroll-hover: hsla(45, 17%, 95%, 0.8);
+  --box-shadow: 0 5px 15px rgba(128, 0, 128, 0.5);
+  --white-scroll-hover: rgba(244, 243, 240, 0.8);
 
   --h1-size: 6rem;
   --h2-size: 5rem;
