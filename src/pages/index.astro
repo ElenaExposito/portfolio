@@ -6,6 +6,7 @@ import { Lumiflex } from "../components/Lumiflex/index.tsx";
 import Header from "../components/Header.astro";
 import Proyects from "../components/Proyects/Proyects.astro";
 import "../styles/index.css";
+import About from "../components/About/About.astro";
 ---
 
 <Layout>
@@ -17,11 +18,15 @@ import "../styles/index.css";
   <div class="section-proyects">
     <Proyects />
   </div>
+  <div class="section-about">
+    <About />
+  </div>
 </Layout>
 
 <style>
   .section-welcome,
-  .section-proyects {
+  .section-proyects,
+  .section-about {
     position: relative;
     width: 100%;
     min-height: 100vh;
