@@ -7,7 +7,6 @@
   border: solid 1px var(--card-border);
   display: flex;
   align-items: flex-start;
-  color: var(--font-color);
   cursor: pointer;
 }
 
