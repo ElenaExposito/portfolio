@@ -26,8 +26,7 @@ interface Item {
               <h5 class="item-title">{item.title}</h5>
             </div>
           </div>
-
-          {item.date && <p class="item-date">{item.date}</p>}
+          {item.date && <p class="item-date item-date-header">{item.date}</p>}
         </div>
         <span class="dropdown-toggle-icon" id="mas-icon">
           <Fragment set:html={MasIcon} />
@@ -49,7 +48,12 @@ interface Item {
             <img class="dropdown-image" src={item.image} alt={item.title} />
           )}
         </div>
-        <h5>{item.title}</h5>
+        <div class="dropdown-footer">
+          <h5>{item.title}</h5>
+          {item.date && (
+            <p class="item-date item-date-footer hidden">{item.date}</p>
+          )}
+        </div>
       </div>
     </div>
   ))

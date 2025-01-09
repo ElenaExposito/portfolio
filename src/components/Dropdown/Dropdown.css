@@ -38,7 +38,6 @@
   text-decoration: none;
   font-weight: bold;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  font-size: 16px;
   width: 100%;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -113,6 +112,20 @@
   .dropdown-knowledge-image {
     flex-direction: column;
   }
+
+  .item-date-header {
+    display: none;
+  }
+
+  .item-date-footer {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .item-date-footer {
+    display: none;
+  }
 }
 
 .dropdown-knowledge {
@@ -124,4 +137,11 @@
   max-width: 300px;
   height: 100%;
   border-radius: 0.5rem;
+}
+
+.dropdown-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  font-size: var(--p-size);
 }
