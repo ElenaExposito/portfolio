@@ -1,6 +1,6 @@
 .proyects {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .proyects-container {
@@ -17,10 +17,9 @@
   font-size: var(--h3-size);
 }
 
-p {
+.card-description {
   font-family: "Afacad", sans-serif;
   font-size: var(--p-size);
-  text-align: center;
   color: var(--gray-custom);
 }
 

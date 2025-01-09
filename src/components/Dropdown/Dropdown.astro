@@ -1,0 +1,90 @@
+---
+import "./Dropdown.css";
+import MasIcon from "../../assets/images/dropdown/svg-mas.svg?raw";
+import MenosIcon from "../../assets/images/dropdown/svg-menos.svg?raw";
+
+const { items } = Astro.props;
+
+interface Item {
+  id: string;
+  title: string;
+  institution?: string;
+  date?: string;
+  hours?: number;
+  knowledge?: string[];
+  image?: string;
+}
+---
+
+{
+  items.map((item: Item) => (
+    <div class="dropdown-item">
+      <div class="dropdown-header">
+        <div class="dropdown-header-text">
+          <div class="dropdown-runtext-container">
+            <div class="dropdown-runtext">
+              <h5 class="item-title">{item.title}</h5>
+            </div>
+          </div>
+
+          {item.date && <p class="item-date">{item.date}</p>}
+        </div>
+        <span class="dropdown-toggle-icon" id="mas-icon">
+          <Fragment set:html={MasIcon} />
+        </span>
+        <span class="dropdown-toggle-icon hidden" id="menos-icon">
+          <Fragment set:html={MenosIcon} />
+        </span>
+      </div>
+      <div class="dropdown-content hidden">
+        <div class="dropdown-location-hours">
+          {item.institution && <p>{item.institution}</p>}
+          {item.hours && <p class="dropdown-hours">{item.hours} horas</p>}
+        </div>
+        <div class="dropdown-knowledge-image">
+          {item.knowledge && (
+            <p class="dropdown-knowledge">{item.knowledge.join(" • ")}</p>
+          )}
+          {item.image && (
+            <img class="dropdown-image" src={item.image} alt={item.title} />
+          )}
+        </div>
+        <h5>{item.title}</h5>
+      </div>
+    </div>
+  ))
+}
+
+<script>
+  // Esperamos a que el DOM esté completamente cargado
+  document.addEventListener("DOMContentLoaded", () => {
+    // Seleccionamos todos los elementos con la clase 'dropdown-header'
+    const dropdownHeaders = document.querySelectorAll(".dropdown-header");
+
+    // Agregamos el evento 'click' para cada 'dropdown-header'
+    dropdownHeaders.forEach((header) => {
+      const content = header.nextElementSibling; // El contenido del dropdown
+
+      header.addEventListener("click", () => {
+        const menosIcon = document.getElementById("menos-icon");
+        menosIcon?.classList.toggle("hidden");
+        const masIcon = document.getElementById("mas-icon");
+        masIcon?.classList.toggle("hidden");
+        if (content) {
+          content.classList.toggle("hidden");
+        }
+      });
+    });
+
+    // Si quieres que el 'marquee' funcione, puedes agregar un evento 'mouseover' y 'mouseout' así:
+    const marqueeElements = document.querySelectorAll(".dropdown-runtext");
+    marqueeElements.forEach((marquee) => {
+      marquee.addEventListener("mouseover", () => {
+        marquee.setAttribute("scrollamount", "5"); // Iniciar el 'marquee'
+      });
+      marquee.addEventListener("mouseout", () => {
+        marquee.setAttribute("scrollamount", "0"); // Detener el 'marquee'
+      });
+    });
+  });
+</script>
