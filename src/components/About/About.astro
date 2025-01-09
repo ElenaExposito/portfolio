@@ -1,11 +1,16 @@
 ---
+import Dropdown from "../Dropdown/Dropdown.astro";
 import "./About.css";
+
+import formacionData from "../../data/data-about/formacion.json";
+import complementariaData from "../../data/data-about/formacion-complementaria.json";
+import experienciaData from "../../data/data-about/experiencia.json";
 ---
 
 <section class="about-me" id="about-me">
   <svg
     id="wave"
-    style="transform:rotate(180deg); transition: 0.3s; margin-top: -10px;"
+    style="transform:rotate(180deg); transition: 0.3s; margin-top: -1px;"
     viewBox="0 0 1440 100"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
@@ -23,8 +28,18 @@ import "./About.css";
   >
 
   <div class="about-me-container">
-    <div>
-      <h3>Sobre mí</h3>
+    <h3>Sobre mí</h3>
+    <div class="about-me-content">
+      <h4>Formación</h4>
+      <Dropdown items={formacionData} />
+    </div>
+    <div class="about-me-content">
+      <h4>Formación complementaria</h4>
+      <Dropdown items={complementariaData} />
+    </div>
+    <div class="about-me-content experience">
+      <h4>Experiencia</h4>
+      <Dropdown items={experienciaData} />
     </div>
   </div>
 </section>

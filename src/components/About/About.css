@@ -1,12 +1,12 @@
 .about-me {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: var(--accent-custom);
 }
 
 .about-me-container {
   background-color: var(--accent-custom);
-  padding: 1.5rem;
+  padding: 4rem;
   width: 100%;
   height: 100%;
   display: flex;
@@ -16,4 +16,18 @@
   align-items: center;
   font-family: "Gliker", sans-serif;
   font-size: var(--h3-size);
+  text-align: center;
+}
+
+.about-me-content {
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.experience .dropdown-location-hours {
+  padding: 0;
+  border-bottom: none;
 }
