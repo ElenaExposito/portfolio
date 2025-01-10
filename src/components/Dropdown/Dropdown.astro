@@ -13,6 +13,8 @@ interface Item {
   hours?: number;
   knowledge?: string[];
   image?: string;
+  image2?: string;
+  image3?: string;
 }
 ---
 
@@ -44,9 +46,17 @@ interface Item {
           {item.knowledge && (
             <p class="dropdown-knowledge">{item.knowledge.join(" • ")}</p>
           )}
-          {item.image && (
-            <img class="dropdown-image" src={item.image} alt={item.title} />
-          )}
+          <div class="dropdown-image-container">
+            {item.image && (
+              <img class="dropdown-image" src={item.image} alt={item.title} />
+            )}
+            {item.image2 && (
+              <img class="dropdown-image" src={item.image2} alt={item.title} />
+            )}
+            {item.image3 && (
+              <img class="dropdown-image" src={item.image3} alt={item.title} />
+            )}
+          </div>
         </div>
         <div class="dropdown-footer">
           <h5>{item.title}</h5>
@@ -77,17 +87,6 @@ interface Item {
         if (content) {
           content.classList.toggle("hidden");
         }
-      });
-    });
-
-    // Si quieres que el 'marquee' funcione, puedes agregar un evento 'mouseover' y 'mouseout' así:
-    const marqueeElements = document.querySelectorAll(".dropdown-runtext");
-    marqueeElements.forEach((marquee) => {
-      marquee.addEventListener("mouseover", () => {
-        marquee.setAttribute("scrollamount", "5"); // Iniciar el 'marquee'
-      });
-      marquee.addEventListener("mouseout", () => {
-        marquee.setAttribute("scrollamount", "0"); // Detener el 'marquee'
       });
     });
   });

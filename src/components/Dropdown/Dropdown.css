@@ -106,6 +106,7 @@
   color: var(--dropdown-knowledge);
   gap: 1rem;
   padding: 1rem;
+  flex-direction: column;
 }
 
 @media (max-width: 768px) {
@@ -133,12 +134,26 @@
   line-height: 1.5;
 }
 
+.dropdown-image-container {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
 .dropdown-image {
+  width: 100%;
   max-width: 300px;
   height: 100%;
   border-radius: 0.5rem;
 }
 
+@media (max-width: 769px) {
+  .dropdown-image-container {
+    flex-direction: column;
+  }
+}
 .dropdown-footer {
   display: flex;
   flex-direction: column;
