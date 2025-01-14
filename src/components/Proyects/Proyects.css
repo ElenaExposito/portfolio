@@ -13,6 +13,7 @@
   justify-content: flex-start;
   gap: 3rem;
   align-items: center;
+  text-align: center;
   font-family: "Gliker", sans-serif;
   font-size: var(--h3-size);
 }

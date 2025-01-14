@@ -7,6 +7,7 @@ import Header from "../components/Header.astro";
 import Proyects from "../components/Proyects/Proyects.astro";
 import "../styles/index.css";
 import About from "../components/About/About.astro";
+import Contact from "../components/Contact/Contact.astro";
 ---
 
 <Layout>
@@ -21,12 +22,16 @@ import About from "../components/About/About.astro";
   <div class="section-about">
     <About />
   </div>
+  <div class="section-contact">
+    <Contact />
+  </div>
 </Layout>
 
 <style>
   .section-welcome,
   .section-proyects,
-  .section-about {
+  .section-about,
+  .section-contact {
     position: relative;
     width: 100%;
     height: 100%;
