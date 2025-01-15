@@ -1,11 +1,52 @@
 ---
+import { Image } from "astro:assets";
 import "./Contact.css";
 import AboutBottomWave from "../../assets/images/waves/about-wave-bottom.svg?raw";
+
+import LinkedinTransparente from "../../assets/icons/linkedin-transparente.png";
+import LinkedinBlanco from "../../assets/icons/linkedin-blanco.png";
+import GitHubTransparente from "../../assets/icons/github-transparente.png";
+import GitHubBlanco from "../../assets/icons/github-blanco.png";
+import CorreoTransparente from "../../assets/icons/correo_transparente.png";
+import CorreoBlanco from "../../assets/icons/correo-blanco.png";
 ---
 
 <section class="contact" id="contact">
   <Fragment set:html={AboutBottomWave} />
   <div class="contact-container">
     <h1>Contacto</h1>
+    <h2>Tu próximo proyecto web empieza con un clic. ¿Conectamos?</h2>
+    <div class="contact-icons">
+      <div class="icons-wrapper">
+        <a
+          href="https://www.linkedin.com/in/elena-exp%C3%B3sito-lara/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image src={LinkedinTransparente} alt="Linkedin" class="default" />
+          <Image src={LinkedinBlanco} alt="Linkedin" class="hover" />
+        </a>
+      </div>
+      <div class="icons-wrapper">
+        <a
+          href="https://github.com/ElenaExposito"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image src={GitHubTransparente} alt="GitHub" class="default" />
+          <Image src={GitHubBlanco} alt="GitHub" class="hover" />
+        </a>
+      </div>
+      <div class="icons-wrapper">
+        <a
+          href="mailto:elenaexpositodeveloper@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image src={CorreoTransparente} alt="GitHub" class="default" />
+          <Image src={CorreoBlanco} alt="GitHub" class="hover" />
+        </a>
+      </div>
+    </div>
   </div>
 </section>

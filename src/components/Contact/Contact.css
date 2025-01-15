@@ -1,3 +1,12 @@
+h1 {
+  font-size: var(--h3-size);
+}
+
+h2 {
+  font-size: var(--p-size);
+  font-family: "Afacad Italic", sans-serif;
+}
+
 .contact {
   width: 100%;
   height: 100%;
@@ -11,10 +20,60 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 3rem;
+  gap: 4rem;
   align-items: center;
   font-family: "Gliker", sans-serif;
   font-size: var(--h3-size);
   text-align: center;
   color: white;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.icons-wrapper {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.icons-wrapper .default,
+.icons-wrapper .hover {
+  border: 1px solid white;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.icons-wrapper .default {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.icons-wrapper .hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.icons-wrapper:hover .default {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.icons-wrapper:hover .hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.icons-wrapper:hover .default,
+.icons-wrapper:hover .hover {
+  border-color: transparent;
 }
