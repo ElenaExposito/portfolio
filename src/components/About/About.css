@@ -25,6 +25,10 @@
   flex-direction: column;
   gap: 1rem;
   width: 100%;
+  background-color: var(--background-custom);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
 }
 
 .experience .dropdown-location-hours {
