@@ -19,7 +19,7 @@
       "Framework de JavaScript",
       "Gestión de proyectos"
     ],
-    "image": "/src/assets/images/experiencia/adopta-un-junior.png",
+    "image": "/src/assets/adopta-un-junior.png",
     "image2": null,
     "image3": null,
     "link": null
@@ -35,7 +35,7 @@
       "Framework VueJS",
       "Netlify"
     ],
-    "image": "/src/assets/images/experiencia/ducktrip-repo.png",
+    "image": "/src/assets/images/ducktrip-repo.png",
     "image2": null,
     "image3": null,
     "link": "https://github.com/davidgm26/ducktrip-app"

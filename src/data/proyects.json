@@ -5,7 +5,7 @@
     "date": "2024",
     "description": "Forma visual y sencilla de consultar las reglas CSS y copiar algunas de ellas al portapapeles.",
     "technologies": ["TypeScript", "JavaScript", "Node.js", "Mocha"],
-    "image": "/src/assets/images/projects/vscode-extension.png",
+    "image": "/src/assets/images/vscode-extension.png",
     "link": "https://marketplace.visualstudio.com/items?itemName=ElenaExpositoo.flex-grid-cheatsheet",
     "link2": "https://github.com/ElenaExposito/flex-grid-cheatsheet"
   },
@@ -27,7 +27,7 @@
       "Netlify",
       "Markdown"
     ],
-    "image": "/src/assets/images/projects/Develmatch.png",
+    "image": "/src/assets/images/Develmatch.png",
     "link": "https://github.com/JavierBrizuela/exceso_de_iteraciones"
   },
   {
@@ -42,7 +42,7 @@
       "HTML+CSS",
       "Control de versiones (Git + GitHub)"
     ],
-    "image": "/src/assets/images/experiencia/ducktrip-repo.png",
+    "image": "/src/assets/images/ducktrip-repo.png",
     "link": "https://github.com/davidgm26/ducktrip-app"
   }
 ]

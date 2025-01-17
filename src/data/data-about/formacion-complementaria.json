@@ -6,7 +6,7 @@
     "date": "Enero 2024",
     "hours": 300,
     "knowledge": ["Responsive Design", "CSS3", "HTML5", "Principios de diseño"],
-    "image": "/src/assets/images/formacion-complementaria/Freecodecamp-Responsive-Web-Design.png"
+    "image": "/src/assets/images/Freecodecamp-Responsive-Web-Design.png"
   },
   {
     "id": "3",
@@ -15,7 +15,7 @@
     "date": "Diciembre 2023",
     "hours": 300,
     "knowledge": ["JavaScript"],
-    "image": "/src/assets/images/formacion-complementaria/Freecodecamp-JavaScript.png"
+    "image": "/src/assets/images/Freecodecamp-JavaScript.png"
   },
   {
     "id": "2",
@@ -23,7 +23,7 @@
     "institution": "Acepcor",
     "date": "Noviembre 2022",
     "hours": 30,
-    "image": "/src/assets/images/formacion-complementaria/acepcor.png"
+    "image": "/src/assets/images/acepcor.png"
   },
   {
     "id": "1",
@@ -32,7 +32,7 @@
     "date": "Octubre 2022",
     "hours": 80,
     "knowledge": ["HTML", "CSS", "Principios de diseño"],
-    "image": "/src/assets/images/formacion-complementaria/intro-des-web-google-activate-1.png",
-    "image2": "/src/assets/images/formacion-complementaria/intro-des-web-google-activate-2.png"
+    "image": "/src/assets/images/intro-des-web-google-activate-1.png",
+    "image2": "/src/assets/images/intro-des-web-google-activate-2.png"
   }
 ]

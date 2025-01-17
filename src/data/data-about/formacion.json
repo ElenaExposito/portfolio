@@ -31,7 +31,7 @@
       "Framework VueJS",
       "Despliegue en Netlify"
     ],
-    "image": "/src/assets/images/formacion/EOI-Vue.png"
+    "image": "/src/assets/images/EOI-Vue.png"
   },
   {
     "id": "2",
@@ -52,9 +52,9 @@
       "XAMPP",
       "Diseño Web"
     ],
-    "image": "/src/assets/images/formacion/Bejob-Nivel-1.png",
-    "image2": "/src/assets/images/formacion/Bejob-Nivel-2.png",
-    "image3": "/src/assets/images/formacion/Bejob-Nivel-3.png"
+    "image": "/src/assets/images/Bejob-Nivel-1.png",
+    "image2": "/src/assets/images/Bejob-Nivel-2.png",
+    "image3": "/src/assets/images/Bejob-Nivel-3.png"
   },
   {
     "id": "1",
