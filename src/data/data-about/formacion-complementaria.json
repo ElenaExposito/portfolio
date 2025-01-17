@@ -1,0 +1,38 @@
+[
+  {
+    "id": "4",
+    "title": "Responsive Web Design",
+    "institution": "freeCodeCamp",
+    "date": "Enero 2024",
+    "hours": 300,
+    "knowledge": ["Responsive Design", "CSS3", "HTML5", "Principios de diseño"],
+    "image": "/src/assets/images/formacion-complementaria/Freecodecamp-Responsive-Web-Design.png"
+  },
+  {
+    "id": "3",
+    "title": "JavaScript Algorithms and Data Structures",
+    "institution": "freeCodeCamp",
+    "date": "Diciembre 2023",
+    "hours": 300,
+    "knowledge": ["JavaScript"],
+    "image": "/src/assets/images/formacion-complementaria/Freecodecamp-JavaScript.png"
+  },
+  {
+    "id": "2",
+    "title": "Ganadora de “Diseña tu plan de Empresa. Taller de emprendimiento",
+    "institution": "Acepcor",
+    "date": "Noviembre 2022",
+    "hours": 30,
+    "image": "/src/assets/images/formacion-complementaria/acepcor.png"
+  },
+  {
+    "id": "1",
+    "title": "Curso de Introducción al Desarrollo Web: HTML y CSS (1 y 2)",
+    "institution": "Google Actívate",
+    "date": "Octubre 2022",
+    "hours": 80,
+    "knowledge": ["HTML", "CSS", "Principios de diseño"],
+    "image": "/src/assets/images/formacion-complementaria/intro-des-web-google-activate-1.png",
+    "image2": "/src/assets/images/formacion-complementaria/intro-des-web-google-activate-2.png"
+  }
+]
