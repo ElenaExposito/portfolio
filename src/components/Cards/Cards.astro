@@ -1,14 +1,15 @@
 ---
-import info from "../../data/proyects.json";
+import { Image } from "astro:assets";
+import { projects } from "../../data/projects";
 import "./Cards.css";
 ---
 
 {
-  info.map((project) => (
+  projects.map((project) => (
     <div class="card-wrapper" id={project.id}>
       <div class="card-info">
         <div class="card-img-wrapper">
-          <img
+          <Image
             class="card-img"
             src={project.image}
             alt={`Imagen del proyecto ${project.title}`}

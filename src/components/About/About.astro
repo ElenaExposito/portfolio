@@ -3,9 +3,9 @@ import Dropdown from "../Dropdown/Dropdown.astro";
 import "./About.css";
 import AboutTopWave from "../../assets/images/about-wave-top.svg?raw";
 
-import formacionData from "../../data/data-about/formacion.json";
-import complementariaData from "../../data/data-about/formacion-complementaria.json";
-import experienciaData from "../../data/data-about/experiencia.json";
+import { formacion } from "../../data/data-about/formacion";
+import { formacionComplementaria } from "../../data/data-about/formacion-complementaria";
+import { experiencia } from "../../data/data-about/experiencia";
 ---
 
 <section class="about-me" id="about-me">
@@ -15,15 +15,15 @@ import experienciaData from "../../data/data-about/experiencia.json";
     <h3>Sobre mí</h3>
     <div class="about-me-content">
       <h4>Formación</h4>
-      <Dropdown items={formacionData} />
+      <Dropdown items={formacion} />
     </div>
     <div class="about-me-content">
       <h4>Formación complementaria</h4>
-      <Dropdown items={complementariaData} />
+      <Dropdown items={formacionComplementaria} />
     </div>
     <div class="about-me-content experience">
       <h4>Experiencia</h4>
-      <Dropdown items={experienciaData} />
+      <Dropdown items={experiencia} />
     </div>
   </div>
 </section>

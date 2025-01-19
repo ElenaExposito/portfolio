@@ -2,6 +2,8 @@
 import "./Dropdown.css";
 import MasIcon from "../../assets/images/svg-mas.svg?raw";
 import MenosIcon from "../../assets/images/svg-menos.svg?raw";
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 
 const { items } = Astro.props;
 
@@ -12,9 +14,9 @@ interface Item {
   date?: string;
   hours?: number;
   knowledge?: string[];
-  image?: string;
-  image2?: string;
-  image3?: string;
+  image?: ImageMetadata;
+  image2?: ImageMetadata;
+  image3?: ImageMetadata;
 }
 ---
 
@@ -48,13 +50,21 @@ interface Item {
           )}
           <div class="dropdown-image-container">
             {item.image && (
-              <img class="dropdown-image" src={item.image} alt={item.title} />
+              <Image class="dropdown-image" src={item.image} alt={item.title} />
             )}
             {item.image2 && (
-              <img class="dropdown-image" src={item.image2} alt={item.title} />
+              <Image
+                class="dropdown-image"
+                src={item.image2}
+                alt={item.title}
+              />
             )}
             {item.image3 && (
-              <img class="dropdown-image" src={item.image3} alt={item.title} />
+              <Image
+                class="dropdown-image"
+                src={item.image3}
+                alt={item.title}
+              />
             )}
           </div>
         </div>
