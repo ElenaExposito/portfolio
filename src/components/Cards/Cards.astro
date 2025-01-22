@@ -6,7 +6,7 @@ import "./Cards.css";
 
 {
   projects.map((project) => (
-    <div class="card-wrapper" id={project.id}>
+    <a href={`/projects/${project.id}`} class="card-wrapper" id={project.id}>
       <div class="card-info">
         <div class="card-img-wrapper">
           <Image
@@ -25,6 +25,6 @@ import "./Cards.css";
           ))}
         </div>
       </div>
-    </div>
+    </a>
   ))
 }

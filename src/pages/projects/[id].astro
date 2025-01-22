@@ -1,0 +1,63 @@
+---
+import "../../styles/index.css";
+import "../../styles/reset.css";
+import "../projects/id.css";
+
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import { projects } from "../../data/projects.ts";
+
+export async function getStaticPaths() {
+  // Genera una ruta para cada proyecto en la lista
+  return projects.map((project) => ({
+    params: { id: project.id.toString() }, // Convierte los IDs a string
+  }));
+}
+
+const { id } = Astro.params;
+
+// Verifica que `id` no sea undefined antes de convertirlo
+if (!id) {
+  throw new Error("El parámetro ID no está definido en la URL.");
+}
+
+const project = projects.find((p) => p.id === String(id));
+
+if (!project) {
+  throw new Error(`No se encontró el proyecto con ID: ${id}`);
+}
+---
+
+<Layout>
+  <div class="projectid-container">
+    <div class="projectid-card">
+      <div class="projectid-header">
+        <div class="projectid-img-wrapper">
+          <Image
+            class="projectid-img"
+            src={project.image}
+            alt={`Imagen del proyecto ${project.title}`}
+          />
+        </div>
+        <div class="projectid-info">
+          <h1>{project.title}</h1>
+          <div class="projectid-info-wrapper">
+            <p>{project.date}</p>
+            <div class="projectid-links">
+              <a>{project.link}</a>
+              <a>{project.link2}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projectid-description">
+        <h2>Descripción</h2>
+        <p>{project.description}</p>
+      </div>
+      <div class="projectid-technologies">
+        <h2>Tecnologías</h2>
+        <p>{project.technologies}</p>
+      </div>
+    </div>
+  </div>
+</Layout>
