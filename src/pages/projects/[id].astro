@@ -7,6 +7,9 @@ import Layout from "../../layouts/Layout.astro";
 import enlaceExterno from "../../assets/icons/enlace-externo-blanco.png";
 import { Image } from "astro:assets";
 import { projects } from "../../data/projects.ts";
+import home from "../../assets/icons/home.png";
+import Tag from "../../components/Tags/Tag.astro";
+import Contact from "../../components/Contact/Contact.astro";
 
 export async function getStaticPaths() {
   // Genera una ruta para cada proyecto en la lista
@@ -33,6 +36,10 @@ const links = [project.link, project.link2].filter(Boolean); // Filtra los links
 
 <Layout>
   <div class="projectid-container">
+    <a class="home-link" href="/" rel="noopener noreferrer">
+      <Image src={home} alt="Home" width={40} height={40} />
+    </a>
+
     <div class="projectid-card">
       <div class="projectid-header">
         <div class="projectid-img-wrapper">
@@ -72,12 +79,16 @@ const links = [project.link, project.link2].filter(Boolean); // Filtra los links
       </div>
       <div class="projectid-description">
         <h2 class="projectid-title">Descripción</h2>
-        <p>{project.description}</p>
+        <p class="projectid-description-text">{project.description}</p>
       </div>
       <div class="projectid-technologies">
         <h2 class="projectid-title">Tecnologías</h2>
-        <p>{project.technologies}</p>
+        <div class="tags-container">
+          {project.technologies.map((tech) => <Tag tagContent={tech} />)}
+        </div>
       </div>
     </div>
   </div>
+
+  <Contact />
 </Layout>

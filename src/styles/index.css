@@ -42,6 +42,18 @@
 
   --contact-background: #33165e;
 
+  --typescript-tag: #3178c6;
+  --javascript-tag: #f0db4f;
+  --nodeJS-tag: #87cf30;
+  --react-tag: #1ba1cc;
+  --html5-tag: #e5532d;
+  --css3-tag: #0975c1;
+  --git-tag: #f1563a;
+  --github-tag: #080808;
+  --netlify-tag: #0b4f4d;
+  --markdown-tag: #080808;
+  --vuejs-tag: #47ba87;
+
   --h1-size: 6rem;
   --h2-size: 5rem;
   --h3-size: 2rem;

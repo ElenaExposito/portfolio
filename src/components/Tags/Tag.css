@@ -1,0 +1,54 @@
+.tag {
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  padding: 0.5rem;
+  color: white;
+}
+
+#TypeScript {
+  background-color: var(--typescript-tag);
+}
+
+#JavaScript {
+  background-color: var(--javascript-tag);
+  color: black;
+}
+
+#NodeJS {
+  background-color: var(--nodeJS-tag);
+  color: black;
+}
+
+#React {
+  background-color: var(--react-tag);
+}
+
+#HTML5 {
+  background-color: var(--html5-tag);
+}
+
+#CSS3 {
+  background-color: var(--css3-tag);
+}
+
+#Git {
+  background-color: var(--git-tag);
+}
+
+#GitHub {
+  background-color: var(--github-tag);
+}
+
+#Netlify {
+  background-color: var(--netlify-tag);
+}
+
+#Markdown {
+  background-color: var(--markdown-tag);
+  color: white;
+}
+
+#VueJS {
+  background-color: var(--vuejs-tag);
+  color: black;
+}

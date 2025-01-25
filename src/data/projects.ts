@@ -9,7 +9,7 @@ export const projects = [
     date: "2024",
     description:
       "Forma visual y sencilla de consultar las reglas CSS y copiar algunas de ellas al portapapeles.",
-    technologies: ["TypeScript", "JavaScript", "Node.js", "Mocha"],
+    technologies: ["TypeScript", "JavaScript", "NodeJS"],
     image: vscExtensionImage,
     link: "https://marketplace.visualstudio.com/items?itemName=ElenaExpositoo.flex-grid-cheatsheet",
     link2: "https://github.com/ElenaExposito/flex-grid-cheatsheet",
@@ -21,9 +21,7 @@ export const projects = [
     description:
       '"Develmatch" es una plataforma colaborativa donde los usuarios del rubro IT pueden encontrar y colaborar en proyectos hechos específicamente por juniors para juniors con la finalidad de encontrar oportunidades de aprendizaje, desarrollo y oportunidad de hacer networking.',
     technologies: [
-      "UX/UI",
       "React",
-      "JSX",
       "TypeScript",
       "JavaScript",
       "HTML5",
@@ -43,11 +41,13 @@ export const projects = [
     description:
       '"Ducktrip" es un proyecto realizado durante el curso impartido por la EOI "Desarrollo web con Vue", Ducktrip es una aplicación para la preparación de tus viajes. Está pensado para poder gestionar vuelos, hoteles y meteorología, para que viajes sin ningún tipo de problema.',
     technologies: [
-      "Framework VueJS",
+      "VueJS",
       "Netlify",
       "JavaScript",
-      "HTML+CSS",
-      "Control de versiones (Git + GitHub)",
+      "HTML5",
+      "CSS3",
+      "Git",
+      "GitHub",
     ],
     image: ducktripImage,
     link: "https://github.com/davidgm26/ducktrip-app",
